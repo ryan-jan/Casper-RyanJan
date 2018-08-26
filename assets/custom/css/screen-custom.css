@@ -49,10 +49,6 @@ p {
     border: none !important;
 }
 
-.post-full-content code {
-    background: #f5f2f0 !important;
-}
-
 .post-full-content blockquote {
     margin: 1.5em;
     padding: 0 1.5em;
@@ -74,4 +70,44 @@ p {
 .author-card-button:hover {
     color: #2962ff;
     border-color: #2962ff;  
+}
+
+/* Custom About Page */
+.about-sidebar {
+    width: 100%;
+}
+
+.about-sidebar > .author-profile-image {
+    width: 70%;
+    height: 70%;
+    box-shadow: 0 0 0 6px #eeeeee;
+}
+
+@media (min-width: 786px) {
+    .about-main {
+        padding: 0;
+    }
+
+    .about-main > .post-content {
+        display: block;
+        width: 70%;
+        float: left;
+        padding: 0 1.5em;
+    }
+
+    .about-sidebar {
+        display: block;
+        width: 30%;
+        float: left;
+        padding: 0 1.5em;
+    }
+
+    .about-sidebar img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .about-sidebar > .author-profile-image {
+        margin: 0 auto;
+    }
 }
